@@ -42,6 +42,8 @@ def vending_machine():
         print(f'Milk: {resources["milk"]}mL')
         print(f'Coffee: {resources["coffee"]}mL')
         print(f'Money: ${money}')
+    if order == "off":
+        return
 
     for drink in MENU:
         if order == drink:
